@@ -46,5 +46,31 @@ Overall, the dataset encompasses a significant amount of information, covering m
 
 ## Approach
 
+Concept drift refers to the phenomenon where the statistical properties of the target variable or the relationships between features and the target variable change over time. In other words, the underlying data distribution evolves, making models trained on past data less effective for predicting future instances. Concept drift can occur due to various factors, such as changes in user behavior, shifts in market dynamics, or the introduction of new technologies.
+
+To address concept drift, the sliding window approach is commonly employed. This approach involves dividing the data into sequential windows of a fixed size, where each window represents a subset of the overall data. The sliding window moves over time, continuously updating the model by incorporating new data while discarding older observations.
+
+The sliding window approach enables the model to adapt to changing patterns and dynamics in the data. By using only recent observations within the window, the model can capture the most up-to-date information and make predictions based on the current data distribution. This technique allows for the detection and adjustment of concept drift, ensuring that the model remains relevant and accurate over time.
+
+In practice, the sliding window approach involves retraining the model periodically, typically at fixed intervals or when a certain number of new instances have been observed. The new model is then compared to the previous one, and if it performs better according to predefined criteria, it replaces the previous model as the current model. By continually updating the model based on recent data, the sliding window approach provides a dynamic and adaptive solution to tackle the challenges posed by concept drift.
+
+In this project, the sliding window approach used to handle concept drift is implemented with certain conditions that prevent the window from shifting solely based on fixed intervals or the amount of data. Instead, a decision mechanism has been developed to evaluate the quality and relevance of the model based on the presence of new trends in the incoming data.
+
+When new data is obtained, the decision mechanism assesses whether the trends within the new data significantly impact the decision-making process. If the new data contains novel patterns or trends that could potentially improve the model's predictive capabilities, the mechanism determines whether to dispose of the old data or concatenate the new data into the existing dataset.
+
+This decision mechanism ensures that the model remains adaptive to changing dynamics in the data while maintaining a balance between incorporating new information and retaining useful historical data. Rather than relying on fixed intervals or a fixed amount of data, the model is updated based on the presence of meaningful and influential trends in the newly acquired data. This flexible approach allows the model to dynamically adjust its learning process and capture the latest patterns, resulting in more accurate predictions and a better understanding of concept drift within the data.
+
 
 ## Results
+
+
+The experiments conducted in this project yielded several significant results:
+
+1. The dynamic sliding window approach showcased a remarkable advantage in terms of computational efficiency. It was found to be four times faster compared to the traditional ancestor model. This enhanced speed highlights the agility, dynamism, and robustness of the dynamic sliding window approach. The reduced processing time enables quicker adaptation to changing data patterns, making it an efficient and effective solution.
+
+2. In addition to its speed advantages, the dynamic sliding window approach also demonstrated a reduction in the amount of data required. Specifically, the amount of data utilized by the dynamic sliding window approach was three times less than that of the old model. This reduction in data requirement not only helps optimize storage resources but also facilitates faster model training and evaluation.
+
+3. Despite the reduced amount of data, the evaluation metrics for the dynamic sliding window approach remained nearly identical to those of the old model. This implies that the dynamic sliding window approach was able to maintain a comparable level of precision in predicting automobile prices. The evaluation metrics, such as accuracy, mean squared error, or other relevant measures, demonstrated similar values for both the dynamic sliding window approach and the traditional model.
+
+In summary, the experiments revealed that the dynamic sliding window approach offers a significant advantage in terms of computational speed, requiring less data while maintaining a similar level of precision compared to the traditional model. These findings validate the effectiveness and efficiency of the dynamic sliding window approach in handling concept drift and its potential as a robust and agile model for price prediction tasks.
+
