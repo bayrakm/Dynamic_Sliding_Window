@@ -24,23 +24,23 @@ Overall, the dataset encompasses a significant amount of information, covering m
 
 No | Feature | Data Type | Unit | Description
 |----------|----------|----------|----------|----------|
-1. | Source | String | N/A | URL of the car.
-2. | Make | String | N/A | Brand of the car. (e.g., Toyota, Ford)
-3. | Model | String | N/A | Model of the car. (e.g., Auris, Golf)
-4. | Price | Continues Number | Sterling | Price of the car on the website.
-5. | Mileage | Continues Number | Mile | Mileage of the car as a whole number.
-6. | Year | Discrete Number | N/A | Manufactured year of the car. (e.g., 2012)
-7. | Power | Continues Number | HP | The power of the car in HP (BHP).
-8. | Consumption | Continues Number | MPG | Fuel consumption of the car in miles per gallon.
-9. | Cylinder | Discrete Number | N/A | The number of cylinders of the car.
-10. | Gears | Discrete Number | N/A | The number of the gears of the car.
-11. | Fuel type | String | N/A | Fuel type of the car (e.g., Petrol, Diesel)
-12. | Transmission | String | N/A | Type of the transmission (e.g., Manual, Auto)
-13. | Body type | String | N/A | The type of the car. (e.g., Hatchback, Sedan) 
-14. | CO2 Emission | Continues Number | g/km | CO2 emission amount of the car.
-15. | Door | Discrete Number | N/A | The number of doors of the car.
-16. | Seat | Discrete Number | N/A | The number of seats in the car.
-17. | Engine size | Continues Number | Litre | The volume of the engine in litres.
+1. | Source | String | N/A | URL of the car. | 
+2. | Make | String | N/A | Brand of the car. (e.g., Toyota, Ford) | 
+3. | Model | String | N/A | Model of the car. (e.g., Auris, Golf) | 
+4. | Price | Continues Number | Sterling | Price of the car on the website. | 
+5. | Mileage | Continues Number | Mile | Mileage of the car as a whole number. | 
+6. | Year | Discrete Number | N/A | Manufactured year of the car. (e.g., 2012) | 
+7. | Power | Continues Number | HP | The power of the car in HP (BHP). | 
+8. | Consumption | Continues Number | MPG | Fuel consumption of the car in miles per gallon. | 
+9. | Cylinder | Discrete Number | N/A | The number of cylinders of the car. | 
+10. | Gears | Discrete Number | N/A | The number of the gears of the car. | 
+11. | Fuel type | String | N/A | Fuel type of the car (e.g., Petrol, Diesel) | 
+12. | Transmission | String | N/A | Type of the transmission (e.g., Manual, Auto) | 
+13. | Body type | String | N/A | The type of the car. (e.g., Hatchback, Sedan)  | 
+14. | CO2 Emission | Continues Number | g/km | CO2 emission amount of the car. | 
+15. | Door | Discrete Number | N/A | The number of doors of the car. | 
+16. | Seat | Discrete Number | N/A | The number of seats in the car. | 
+17. | Engine size | Continues Number | Litre | The volume of the engine in litres. | 
 
 
 
