@@ -22,7 +22,7 @@ The dataset focuses on cars from four specific makes: Toyota, Ford, Vauxhall (Op
 
 Overall, the dataset encompasses a significant amount of information, covering multiple features and a range of popular car makes and models. This rich dataset provides a solid foundation for conducting exploratory data analysis, developing predictive models, and evaluating their performance in the context of price prediction.
 
-No | Feature | Data Type | Unit | Description
+No | Feature | Data Type | Unit | Description  | 
 |----------|----------|----------|----------|----------|
 1. | Source | String | N/A | URL of the car. | 
 2. | Make | String | N/A | Brand of the car. (e.g., Toyota, Ford) | 
